@@ -59,7 +59,6 @@ public_users.get('/author/:author', async function (req, res) {
  // const booksbyauthor = Object.values(books).find(item => item.title === req.params.title);
   //res.send(booksbyauthor);
 //});
-
 public_users.get('/title/:title', async function (req, res) {
   const booksbyauthor = await Object.values(books).find(item => item.title === req.params.title);
   res.send(booksbyauthor);
